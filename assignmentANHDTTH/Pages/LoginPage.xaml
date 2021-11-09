@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="assignmentANHDTTH.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:assignmentANHDTTH.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel >
+        <StackPanel Margin="0 200 0 0" Width="400">
+            <TextBox Style="{StaticResource FormControl}" x:Name="txt_email" Header="E-Mail Adress"/>
+            <PasswordBox Style="{StaticResource FormControl2}" x:Name="txt_password" Header="Password"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Width="400">
+            <Button Click="Button_Click_1">Login</Button>
+            <Button Margin="30 0 0 0" Click="Button_Click">Register</Button>
+        </StackPanel>
+    </StackPanel>
+</Page>

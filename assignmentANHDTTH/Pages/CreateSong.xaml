@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="assignmentANHDTTH.Pages.CreateSong"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:assignmentANHDTTH.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+
+    <StackPanel>
+        <StackPanel   Margin="0 20 0 0" Orientation="Vertical" Width="717">
+            <TextBox x:Name="txt_thumbnail" PlaceholderText="Thumbnail"  Margin="0 0 0 20"  Height="40"/>
+            <TextBox x:Name="txt_name" PlaceholderText="Name Song"  Margin="0 0 0 20"  Height="40" />
+            <TextBox x:Name="txt_author" PlaceholderText="Author"  Margin="0 0 0 20"   Height="40"/>
+            <TextBox x:Name="txt_singer" PlaceholderText="Singer"  Margin="0 0 0 20"  Height="40"/>
+            <TextBox x:Name="txt_link" PlaceholderText="Link"   Margin="0 0 0 20"  Height="40"/>
+            <TextBox x:Name="txt_status" PlaceholderText="Status"  Margin="0 0 0 20"  Height="40"/>
+            <TextBox x:Name="txt_desc" PlaceholderText="Desription" TextWrapping="Wrap" Margin="0 0 0 20"  Height="150"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Width="717">
+            <Button Margin="0 0 10 0" Width="100" Click="Button_Click_1">
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Margin="4 0" Symbol="Refresh"/>
+                    <TextBlock Text="clean" />
+                </StackPanel>
+            </Button>
+            <Button Width="150" Click="Button_Click">
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Margin="4 0" Symbol="Add"/>
+                    <TextBlock Text="Create Music" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</Page>
